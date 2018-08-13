@@ -1,9 +1,10 @@
 import os
-from setuptools import setup, find_packages
 from os import path
 
+from setuptools import setup, find_packages
 
-VERSION = '1.0.2'
+
+VERSION = '1.0.3'
 
 
 here = path.abspath(path.dirname(__file__))
@@ -30,15 +31,12 @@ setup(
     author='GBDX (Dmitry Zviagintsev)',
     author_email='dmitry.zviagintsev@digitialglobe.com',
     classifiers=[
-        # How mature is this project? Common values are
-        #   3 - Alpha
-        #   4 - Beta
-        #   5 - Production/Stable
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
     ],
-        package_data={
+    package_data={
         'gbdx_task_interface': [],
     },
     include_package_data=True
